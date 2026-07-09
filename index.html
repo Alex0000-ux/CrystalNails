@@ -33,6 +33,7 @@
             </button>
 
             <nav id="main-nav" role="navigation" aria-label="Menu principale">
+                <a href="menu.html">Menu</a>
                 <a href="#servizi">I Nostri Servizi</a>
                 <a href="#novita">Novità</a>
                 <a href="eventi.html">Eventi</a>
@@ -60,18 +61,15 @@
 
             <!-- Lato Destro: Icone Cliccabili -->
             <div class="hero-icons">
-                <a href="staff.html" class="hero-icon-link">
-                    <img src="img/staff_icon.jpg" alt="Icona Staff">
-                    <span>Staff</span>
+                <a href="menu.html" class="hero-icon-link">
+                    <img src="img/menu_icon.jpg" alt="Icona Drink e Stuzzicheria">
+                    <span>Drink e Stuzzicheria</span>
                 </a>
                 <a href="eventi.html" class="hero-icon-link">
                     <img src="img/eventi_icon.jpg" alt="Icona Eventi">
                     <span>Eventi</span>
                 </a>
-                <a href="menu.html" class="hero-icon-link">
-                    <img src="img/menu_icon.jpg" alt="Icona Drink e Stuzzicheria">
-                    <span>Drink e Stuzzicheria</span>
-                </a>
+                 
             </div>
 
         </div>
@@ -89,15 +87,19 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🍸</div>
-                    <h3>Cocktail & Drink</h3>
-                    <p>Drink curati nei minimi dettagli, dai grandi classici alle nostre signature preparate con
+                    <a href="menu.html#drink-section" aria-label="Vai al menu - sezione Drink" style="text-decoration: none; color: inherit;">
+                        <h3>Cocktail & Drink</h3>
+                        <p>Drink curati nei minimi dettagli, dai grandi classici alle nostre signature preparate con
                         ingredienti premium.</p>
+                    </a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🥨</div>
-                    <h3>Stuzzicheria</h3>
-                    <p>Sfiziosità e prodotti selezionati con cura per accompagnare al meglio il tuo aperitivo.
-                    </p>
+                    <a href="menu.html#aperitivi-section" aria-label="Vai al menu - sezione Stuzzicheria" style="text-decoration: none; color: inherit;">
+                        <h3>Stuzzicheria</h3>
+                        <p>Sfiziosità e prodotti selezionati con cura per accompagnare al meglio il tuo aperitivo.
+                        </p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -109,16 +111,59 @@
                 Scopri le locandine!</p>
             <div class="news-container">
                 <!--INIZIO BLOCCO LOCANDINE-->
+
+                <!-- Locandina 6: Temptation Island -->
                 <div class="news-card">
-                    <img src="img/locandine/locandina1.jpg" alt="Promo Tramonto" class="event-poster">
+                    <div class="poster-wrapper">
+                        <img src="img/locandine/locandina6.jpg" alt="Bitter Temptation Island In Diretta" class="event-poster">
+                    </div>
                     <div class="news-details">
-                        <span class="news-date">Tutti i giorni</span>
-                        <h3>Aperitivo al Tramonto</h3>
-                        <p>Goditi la magia di Marina di Ragusa: prenota il tuo tavolo per l'ora dell'aperitivo e
-                            lasciati sorprendere dalle nostre proposte.</p>
+                        <span class="news-date">Mercoledì 8 Luglio | Start 21:00</span>
+                        <h3>Temptation Island In Diretta</h3>
+                        <p>Goditi la diretta del programma più atteso dell'estate al porto! Offerte speciali: 2 Drink a
+                            12€, 1 Calice di vino a 5€, 3 Birre a 10€.</p>
                     </div>
                 </div>
+                
+                <!-- Locandina 5: Sunset Aperitif -->
+                <div class="news-card">
+                    <div class="poster-wrapper">
+                        <img src="img/locandine/locandina5.jpg" alt="Sunset Aperitif Bitter" class="event-poster">
+                    </div>
+                    <div class="news-details">
+                        <span class="news-date">Tutti i giorni | 18:30 - 21:30</span>
+                        <h3>Sunset Aperitif</h3>
+                        <p>Un momento da gustare quando il sole incontra il mare. Ricchi taglieri con specialità locali
+                            accostati ai nostri cocktail e spritz d'autore.</p>
+                    </div>
+                </div>
+
                 <!--Aggiungi altre!!!-->
+            </div>
+        </section>
+
+        <!-- SEZIONE SOCIAL PREVIEW -->
+        <section id="social-preview" class="social-section">
+            <h2>Seguici sui Social</h2>
+            <div class="social-cards">
+                <!-- Card Instagram -->
+                <a href="https://www.instagram.com/bitter_marinadrg/" target="_blank" class="social-card">
+                    <div class="social-img-wrapper">
+                        <img src="img/igPrev.jpg" alt="Anteprima profilo Instagram Bitter" class="social-img">
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Guarda le nostre storie e i drink del momento.</p>
+                    <span class="social-link-btn">Vai al profilo</span>
+                </a>
+                <!-- Card Facebook -->
+                <a href="https://www.facebook.com/bittermarinadiragusa" target="_blank" class="social-card">
+                    <div class="social-img-wrapper">
+                        <img src="img/fbPrev.jpg" alt="Anteprima profilo Facebook Bitter" class="social-img">
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>Rimani aggiornato su eventi e novità della settimana.</p>
+                    <span class="social-link-btn">Seguici qui</span>
+                </a>
             </div>
         </section>
 

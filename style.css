@@ -838,6 +838,73 @@ footer a:hover {
     background: var(--primary-hover);
 }
 
+/* --- STILE CARDS CON IMMAGINI --- */
+.social-img-wrapper {
+    width: 100%;
+    height: 180px;
+    /* Altezza fissa per uniformità */
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.social-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Mantiene le proporzioni senza deformare */
+    transition: transform 0.5s ease;
+}
+
+.social-card:hover .social-img {
+    transform: scale(1.08);
+    /* Effetto zoom elegante */
+}
+
+.social-section {
+    background: var(--bg-color);
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.social-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.social-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 350px;
+    text-decoration: none;
+    color: var(--text-dark);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-card h3 {
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.social-link-btn {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 /* =========================================
    MEDIA QUERIES - IL VERO RESPONSIVE
    ========================================= */
