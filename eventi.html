@@ -173,7 +173,25 @@
                 d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
         </svg>
     </a>
+<script>
+    function setResponsiveZoom() {
+        // Controlla se la larghezza dello schermo è quella di un mobile
+        if (window.innerWidth <= 768) {
+            document.body.style.transform = "scale(0.75)";
+            document.body.style.transformOrigin = "0 0";
+            // Aumenta la larghezza per compensare la riduzione dello zoom
+            document.body.style.width = "133.33%";
+        } else {
+            // Ripristina per desktop
+            document.body.style.transform = "none";
+            document.body.style.width = "100%";
+        }
+    }
 
+    // Esegue al caricamento e al ridimensionamento
+    window.addEventListener('resize', setResponsiveZoom);
+    window.addEventListener('load', setResponsiveZoom);
+</script>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
     <script src="script.js" defer></script>
 

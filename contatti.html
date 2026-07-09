@@ -156,6 +156,25 @@
         </svg>
     </a>
 </body>
+<script>
+    function setResponsiveZoom() {
+        // Controlla se la larghezza dello schermo è quella di un mobile
+        if (window.innerWidth <= 768) {
+            document.body.style.transform = "scale(0.75)";
+            document.body.style.transformOrigin = "0 0";
+            // Aumenta la larghezza per compensare la riduzione dello zoom
+            document.body.style.width = "133.33%";
+        } else {
+            // Ripristina per desktop
+            document.body.style.transform = "none";
+            document.body.style.width = "100%";
+        }
+    }
+
+    // Esegue al caricamento e al ridimensionamento
+    window.addEventListener('resize', setResponsiveZoom);
+    window.addEventListener('load', setResponsiveZoom);
+</script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="script.js" defer></script>
 </html>
