@@ -8,25 +8,6 @@
     <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
-    (function () {
-        // Crea il tag viewport dinamicamente
-        var meta = document.createElement('meta');
-        meta.name = "viewport";
-
-        // Rileva se l'utente è su mobile/tablet controllando la larghezza dello schermo
-        // 768 pixel è la soglia standard per i telefoni in verticale/orizzontale
-        if (window.screen.width <= 768) {
-            // Se è un telefono: zoom al 50%
-            meta.content = "width=device-width, initial-scale=0.5";
-        } else {
-            // Se è un PC: zoom standard al 100%
-            meta.content = "width=device-width, initial-scale=1.0";
-        }
-
-        document.getElementsByTagName('head')[0].appendChild(meta);
-    })();
-</script>
 <body>
     <header class="main-header"
         style="min-height: 50vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('img/corsi/corso1.jpg') center/cover;">
