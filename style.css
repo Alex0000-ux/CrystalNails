@@ -31,12 +31,12 @@
 }
 
 :root {
-    --primary: #3d4a3a;
-    --primary-hover: #2d382b;
-    --secondary: #5a6b57;
-    --secondary-hover: #465443;
-    --bg-color: #fcfbfa;
-    --text-dark: #3d4a3a;
+    --primary: #6b4355;
+    --primary-hover: #50303e;
+    --secondary: #e8d3ce;
+    --bg-color: #fdfaf8;
+    --text-dark: #271c22;
+    --text-light: #ffffff;
     --whatsapp: #25D366;
     --whatsapp-hover: #128C7E;
 }
