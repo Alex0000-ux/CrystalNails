@@ -6,7 +6,7 @@ cartella = "galleria"
 file_configurazione = "gallery-data.json"
 
 def estrai_numero(nome_file):
-    match = re.search(r'bitter-(\d+)', nome_file)
+    match = re.search(r'nails-(\d+)', nome_file)
     if match:
         return int(match.group(1))
     return float('inf') 
@@ -47,7 +47,7 @@ def ottimizza_e_compatta_galleria():
 
     # FASE 2: Assegnazione nomi definitivi (qui avviene lo shift all'indietro)
     for indice, (percorso_temp, estensione) in enumerate(file_temporanei, start=1):
-        nuovo_nome = f"bitter-{indice}{estensione}"
+        nuovo_nome = f"nails-{indice}{estensione}"
         nuovo_percorso_reale = os.path.join(cartella, nuovo_nome)
         os.rename(percorso_temp, nuovo_percorso_reale)
 

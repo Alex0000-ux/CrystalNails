@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corso Semipermanente & Dry Manicure | Crystal Nails</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header"
+        style="min-height: 50vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('img/corsi/corso2.jpg') center/cover;">
+        <div class="header-overlay">
+            <a href="index.html" class="logo-container" style="text-decoration: none;">
+                <img src="img/logo.png" alt="Logo" class="logo" width="50" height="50">
+                <h1>Crystal Nails | Ragusa</h1>
+            </a>
+            <nav id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="index.html#corsi" class="nav-highlight">Corsi</a>
+                <a href="index.html#contatti">Contatti</a>
+            </nav>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text fade-in" style="margin-top: 40px;">
+                <h2>Semipermanente & Dry Manicure</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="services-section fade-in">
+            <p class="section-subtitle" style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 50px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔌</div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Dolor Sit Amet</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💧</div>
+                    <h3>Consectetur Adipiscing</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+                </div>
+            </div>
+
+            <!-- MODULO CONTATTI -->
+            <div
+                style="margin-top: 60px; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); max-width: 600px; margin-inline: auto;">
+                <h3 style="color: var(--primary); margin-bottom: 10px; text-align: center;">Vuoi specializzarti?</h3>
+                <p style="margin-bottom: 25px; text-align: center; color: #666;">Contattaci per scoprire il calendario
+                    dei prossimi corsi in partenza.</p>
+
+                <form class="course-contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome *</label>
+                        <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cognome">Cognome *</label>
+                        <input type="text" id="cognome" name="cognome" placeholder="Il tuo cognome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Numero di Telefono *</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+39 333 1234567" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="corso">Corso in questione *</label>
+                        <input type="text" id="corso" name="corso" value="Corso Semipermanente & Dry Manicure" readonly>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Invia Richiesta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">© 2026 Crystal Nails Ragusa. Tutti i diritti riservati.</p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
